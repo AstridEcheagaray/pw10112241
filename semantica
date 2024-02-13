@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer HTML</title>
+<head>
+<body>
+    <header>   
+        <img src="logo.jpg" alt="logo">
+        <h1>Título de página</h1> 
+        <nav>
+            <ul>
+                <li>Opciones</li>
+                <li>Opciones</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        Aquí va lo importante
+        <article>Fuera de sección</article>
+        <section>
+            <article>
+                Información
+                <article></article>
+            </article>
+        </section>
+        <aside>
+            Info no importante
+            Información tangencial de la empresa
+        </aside>
+    </main>
+    <footer>
+        Contacto  - telefonos - dirección
+        &copy; 2024 <br>
+        Acerca de... 
+        Otras páginas
+    </footer>
+</body>
+</html>
