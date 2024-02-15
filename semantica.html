@@ -5,6 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primer HTML</title>
+    <style>
+        h1{
+            color: rgb(124, 39, 93);
+        }
+        header{
+            background-color: rgba(221, 168, 207);
+        }
+        header nav ul li{
+            /*border: 1px solid rgb(124, 39, 93);*/
+            border-radius: 5px; /*5px es el estandar*/
+            display: inline-block;
+        }
+        header nav ul li:hover{
+            background-color: rgb(219, 133, 180);
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <header>   
@@ -12,8 +29,11 @@
         <h1>Título de página</h1> 
         <nav>
             <ul>
-                <li>Opciones</li>
-                <li>Opciones</li>
+                <li>Inicio</li>
+                <li>Archivo</li>
+                <li>Guardar</li>
+                <li>Nosotros</li>
+                <li>Salir para afuera</li>
             </ul>
         </nav>
     </header>
@@ -37,6 +57,15 @@
         Acerca de... <br>
         Otras páginas
 
+        <main>
+            <section>
+                <article></article>
+                <article></article>
+            </section>
+        </main>
+
+        <section class="noticias"></section>   <!-- section.noticias -->
+        <section id="inicio"></section>  <!-- section#inicio -->
 
         <ul>
             <li>sdssdsds</li>
