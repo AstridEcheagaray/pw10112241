@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica CSS 01</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
         <img src="img/resplandor.png" alt="fondo">
-        <img src="img/logo.png" alt="logo">
+        <img src="img/logo.png" alt="logo" id="logo">
         <nav>
             <ul>
                 <li>Inicio</li>
@@ -24,14 +25,16 @@
             </form>
         </nav>
     </header>
-    <section>
-        <article><img src="img/slide2.jpg" alt="Slide"></article>
+    <section id="seccion01">
+        <article>
+            <img src="img/slide2.jpg" alt="Slide">
+        </article>
     </section>
-    <section>
+    <section id="seccion02">
         <article>
             <img src="img/separador.jpg" alt="Separador"> 
             <br>
-            Una sección
+            <span class="unaSeccion nito">Una sección</span> 
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum in accusamus error numquam facilis obcaecati velit distinctio earum dignissimos vitae laborum, fuga ea laudantium quibusdam eveniet sapiente inventore voluptate et!
             <br>
@@ -42,7 +45,7 @@
         <article>
             <img src="img/separador.jpg" alt="separador">
             <br>
-                Otra sección
+                <span class="otraSeccion nito">Otra sección</span>
             <br>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, porro voluptatum cumque, ipsa dolores iste aliquam iure tempore quisquam ea, assumenda cupiditate iusto nihil neque ipsam nostrum veniam similique facilis!
             <br>
@@ -53,7 +56,7 @@
         <article>
             <img src="img/separador.jpg" alt="Separador">
             <br>
-            Un video 
+            <span class="otraSeccion nito">Un video</span> 
             <br>
             <img src="img/video.jpg" alt="Video">       
         </article>
