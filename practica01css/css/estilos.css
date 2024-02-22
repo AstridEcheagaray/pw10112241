@@ -7,6 +7,32 @@ body{
 header{
     background: #D1E3EE;
 }
+header nav{
+    background: #026DC6;
+    border-radius: 5px; /*redondear la linea, 5px normalmente*/
+    margin: 0px auto; /*centrar la linea -- margin son para los margenes externos*/
+    padding: 2px 0px; /*son para los margenes internos*/
+    width: 99%; /*para que la linea no abarque el 100% de la pantalla*/
+}
+header nav form{
+    float: right; /*se manda a la derecha*/
+    margin-right: 10px;
+    margin-top: -35px; /*se sube la caja de buscar*/
+}
+header nav form input{ /*son el boton y la caja de texto*/
+    border-radius: 5px;
+}
+header nav form input[type="submit"]{
+    background: green;
+    border: 1px solid green; /*para pintar el borde*/
+    color: white;
+}
+header nav ul li{
+    /*border: 1px solid red; *para poder ver la cajita de texto*/
+    color: white;
+    display: inline-block; /*para que el texto deje de ser una lista y se ponga en horizontal*/
+    margin-right: 20px; /*para la separacion*/
+}
 #logo{ /*# es un id = "logo"*/
     margin: -150px 0px 0px 0px; /*margin-top: -150px;*/
     
