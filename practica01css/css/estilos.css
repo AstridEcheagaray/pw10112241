@@ -37,3 +37,36 @@ header nav ul li{
     margin: -150px 0px 0px 0px; /*margin-top: -150px;*/
     
 }
+#seccion01{
+    margin-top: 10px; /*se baja la imagen*/
+
+}
+#seccion01 article{ /*aqui es donde esta la imagen*/
+    text-align: center; /*text aling centra el contenido de la caja*/
+}
+#seccion01 article img{
+    border: 5px solid rgba(150,150,150,0.3);
+    width: 98%; /*siempre modificar solo el ancho de una imagen para que sea proporcional*/
+}
+#seccion02 article{
+    display: inline-block;
+    vertical-align: top; /*para que esten alineados hacia arriba*/
+    width: 32.8%;
+
+}
+#seccion02 article input[type="submit"]{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: blue;
+    margin-left: 38%; /*o 130px*/
+}
+.nito{
+    font-weight: bold; /*para hacer el texto en negritas*/
+}
+.unaSeccion{ /*como es una clase, lleva . */
+    font-size: 4.5em;
+}
+.otraSeccion{
+    font-size: 2.5em;
+}
