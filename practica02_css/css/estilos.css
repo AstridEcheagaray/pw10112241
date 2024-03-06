@@ -60,6 +60,31 @@ header nav ul li{
     color: #FF0099;
     content: "• ";
 }
+#sec03art04{
+    padding-top: 60PX;
+}
+#segundaseccion article{
+    /*border: 1px solid red;*/
+    padding-right: 140px;
+    /*margin-right: 140px;*/
+    text-align: right;
+
+}
+#terceraseccion article{
+    border: 1px solid red;
+    display: inline-block; /*se acomodan a como cabe cada caja*/
+    vertical-align: top;
+    width: 23%;
+}
+#terceraseccion article img{
+    vertical-align: middle; /*alineacion vertical del texto que la rodea*/
+}
+#monitos{
+    margin-left: 950px;
+}
+#footer img{
+    border: 1px solid blue;
+}
 .colorazul{
     color: #4267B3;
 }
@@ -71,6 +96,9 @@ header nav ul li{
 }
 .letragrande{
     font-size: 3.5em;   
+}
+.letramediana{
+    font-size: 2em;
 }
 .nito{
     font-weight: bold;
