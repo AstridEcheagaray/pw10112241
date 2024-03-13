@@ -14,12 +14,27 @@ body{
     margin: 0px auto; /*centrado*/
     max-width: 1024px;
 }
+footer article{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px; /*pone margen interno a la caja arriba,abajo,derecha e izquierda*/
+    vertical-align: top;
+    width: 31.1%;
+}
+footer img{
+    width: 300px;
+}
+header ul{
+    /*border: solid red;*/
+    margin-left: -3.5%;
+}
 header ul li{
+    /*border: solid red;*/
     display: inline-block; /*se ponen en horizontal*/
-    margin-left: -10px;
+    margin-left: -4px;
     padding: 8px 14px;
     text-align: center;
-    width: 17.0%;
+    width: 17.1%;
 }
 header ul li:nth-child(2){ /**/
     background: var(--color-verde);
@@ -32,6 +47,10 @@ header ul li:nth-child(4){ /**/
 }
 header ul li:nth-child(5){ /**/
     background: var(--color-gris);
+}
+hr{
+    border-style: dashed; /*para puntear la linea*/
+    color: var(--color-linea);
 }
 section article{
     display: inline-block;
@@ -69,6 +88,10 @@ section img{
 }
 .letra-gris{
     color: var(--color-linea);
+}
+.read-more{
+    /*border: solid red;*/
+    margin-left: 230px;
 }
 .tam-menu-lateral{
     font-size: 1.1em;
