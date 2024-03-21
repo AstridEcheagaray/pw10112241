@@ -2,5 +2,49 @@ header{
     
 }
 #azul{
+    border: solid red;
     background: rgb(35, 93, 146);
+    padding-left: 340px;
+}
+#notificaciones img{
+    border: solid green;
+    
+}
+#links{
+    border: solid red;
+    display: inline-block;
+    background: rgb(29,73,115);
+}
+#progress{
+    border: solid red;
+    
+}
+#seccion01{
+    width: 30%;
+}
+#main section{
+    display: inline-block;
+}
+#sec01 article{
+    border: solid blue;
+    display: inline-block;
+    vertical-align: top;
+}
+#sec01 article {
+    text-align: center;
+}
+#cubo1{
+    background: rgb(23,168,33);
+}
+#cubo2{
+    background: rgb(28, 109, 170);
+}
+#cubo3{
+    background: rgb(127, 27, 168);
+}
+#cubo4{
+    background: rgb(167, 25, 25);
+}
+.letra-blanca{
+    color: white;
 }
