@@ -1,0 +1,21 @@
+body{
+    font-size: 16px; /*1em*/
+    margin: 0px auto; /*centrado*/
+    max-width: 1024px;
+}
+header{
+    background: rgb(31, 41, 55);
+}
+#sec01{
+    background: rgb(31, 41, 55);
+}
+
+.letra-blanca{
+    color: white;
+}
+.letra-gris{
+    color: gray;
+}
+.letra-grande{
+    font-size: 1.5em;
+}
