@@ -1,0 +1,90 @@
+body{
+    font-size: 16px; /*1em*/
+    margin: 0px auto; /*centrado*/
+    max-width: 1024px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    text-align: center;
+}
+header article{
+    display: inline-block;
+}
+header ul{
+    display: inline-block;
+    margin-top: 10px;
+}
+header img{
+    float: left;
+    margin-top: 10px;
+}
+header ul li{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+header button{
+    margin: 15px 10px;
+}
+#boton1{
+    background: white;
+    border: solid rgb(255, 0, 67,1);
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    margin-right: 10px;
+    margin-left: 120px;
+}
+#boton2{
+    background: rgb(255, 0, 67,1);
+    border: solid rgb(255, 0, 67,1);
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+section article{
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+section article img{
+    width: 500px;
+}
+#article1{
+    width: 60%;
+}
+#article2{
+    width: 20%;
+}
+#article2 img{
+    width: 300px;
+}
+footer{
+    margin-top: 40px;
+    background: rgb(245, 245, 245, 0.4);
+    text-align: center;
+}
+footer article{
+    display: inline-block;
+    margin-right: 30px;
+    background-color: white;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.letra-blanca{
+    color: white;
+}
+.letra-roja{
+    color:  rgb(255, 0, 67,1);
+}
+.negrita{
+    font-weight: bold;
+}
+.tam-grande{
+    font-size: 3em;
+}
+.tam-mediano{
+    font-size: 2em;
+}
+.tam-chico{
+    font-size: 1.4em;
+}
