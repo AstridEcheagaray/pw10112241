@@ -2,9 +2,9 @@
     <div class="container mt-5">
         <div class="card">
             <div class="card-header">
-                <h4>Agregar cliente</h4>
+                <h4>Actualizar cliente</h4>
                 <div v-if="mensaje==1" class="alert alert-primary" role="alert">
-                    Datos guardados con éxito
+                    Datos actualizados con éxito
                 </div>
             </div>
                 <div class="card-body">
@@ -50,7 +50,7 @@
                             <ErrorMessage name="cp" class="errorValidacion"/>
                         </div>
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-primary">Agregar</button>
+                            <button type="submit" class="btn btn-primary">Actualizar</button>
                         </div>
                     </Form>
                 </div>
@@ -76,7 +76,7 @@
                     /^([a-z]{3,4})(\d{2})(\d{2})(\d{2})([0-9a-z]{3})$/i
                 );
                 const curpRegex = new RegExp(
-                    /^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$/g
+                    /^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9][12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$/g
                 );
                 const cpRegex = new RegExp(
                     /^[0-9]{5}$/
@@ -111,13 +111,32 @@
                 }
             }
         },
+        mounted(){
+            // console.log(this.$route.params.id)
+            this.getCliente(this.$route.params.id);
+        },
         methods: {
             onTodoValidado(values){
                 // alert(JSON.stringify(values, null, 2));
-                this.guardarCliente();
+                this.actualizarCliente();
             },
-            guardarCliente(){
-                axios.post('http://localhost:3000/api/clientes', this.model.cliente)
+            getCliente(clienteID){
+                axios.get('http://localhost:3000/api/clientes/'+clienteID).then(res=>{
+                    // console.log(res.data)
+                    this.model.cliente = res.data[0]
+                    // this.model.cliente.id=res.data[0].id
+                    // this.model.cliente.nombre=res.data[0].nombre
+                    // this.model.cliente.apellido=res.data[0].apellido
+                    // this.model.cliente.direccion=res.data[0].direccion
+                    // this.model.cliente.telefono=res.data[0].telefono
+                    // this.model.cliente.rfc=res.data[0].rfc
+                    // this.model.cliente.curp=res.data[0].curp
+                    // this.model.cliente.cp=res.data[0].cp
+                });
+            },
+            actualizarCliente(){
+                this.model.cliente.id = this.$route.params.id
+                axios.put('http://localhost:3000/api/clientes/'+this.model.cliente.id, this.model.cliente)
                     .then(res => {
                         if(res.data.affectedRows == 1){
                                 this.model.cliente = {

@@ -11,5 +11,4 @@ import MenuView from './views/MenuView.vue'
 </template>
 
 <style scoped>
-
 </style>
